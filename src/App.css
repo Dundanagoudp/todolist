@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1E90FF, #87CEFA); /* Blue gradient background */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: linear-gradient(to right, #0B2470, #1E90FF); /* Gradient background from #0B2470 to #1E90FF */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 20px;
+  border: 1px solid #e0e0e0; /* Light border for definition */
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #333; /* Darker text for contrast */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #007BFF; /* Blue border */
+  border-radius: 8px; /* Rounded corners */
+  width: calc(100% - 28px);
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input:focus {
+  border-color: #0056b3; /* Darker blue when focused */
+  outline: none; /* Remove outline */
+}
+
+button {
+  padding: 12px 18px;
+  border: 2px solid transparent; /* Border for button */
+  border-radius: 8px; /* Rounded corners */
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for background and border */
+}
+
+.add-btn {
+  background-color: #007BFF; /* Blue background */
+  color: white; /* Text color */
+  border-color: #0056b3; /* Darker blue border */
+}
+
+.add-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #003f7f; /* Even darker blue border on hover */
+}
+
+.complete-btn {
+  background-color: #4CAF50; /* Green for complete */
+  color: white; /* Text color */
+  border-color: #388E3C; /* Darker green border */
+}
+
+.complete-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+  border-color: #2E7D32; /* Darker green border on hover */
+}
+
+.delete-btn {
+  background-color: #f44336; /* Red for delete */
+  color: white; /* Text color */
+  border-color: #d32f2f; /* Darker red border */
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  border-color: #b71c1c; /* Darker red border on hover */
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px; /* More padding for a better layout */
+  border-bottom: 1px solid #e0e0e0; /* Light grey line between tasks */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.todo-item:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+}
+
+.task {
+  flex: 1; /* Allow the task to take up the remaining space */
+  font-size: 18px; /* Larger font size for better readability */
+}
+
+.completed {
+  text-decoration: line-through; /* Strikethrough for completed tasks */
+  color: #888; /* Light grey color for completed tasks */
+}
